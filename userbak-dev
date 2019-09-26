@@ -1,8 +1,8 @@
 server:
-  port: 8085
+  port: 80851
 spring:
   application:
-    name: user-service
+    name: userbak-service
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8&useSSL=false
     username: root
@@ -11,9 +11,10 @@ spring:
       maximum-pool-size: 20
       minimum-idle: 10
   redis:
-    host: 192.168.19.121
+    host: 127.0.0.1
+    #host: 192.168.19.121
   rabbitmq:
-    host: 192.168.19.121
+    host: 127.0.0.1
     username: /leyou
     password: leyou
     virtual-host: /leyou
